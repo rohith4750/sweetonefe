@@ -1,0 +1,139 @@
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  min-width: 300px;
+  max-width: 500px;
+  animation: slideIn 0.3s ease-out;
+  position: relative;
+  border-left: 4px solid;
+}
+
+.toast-success {
+  border-left-color: var(--success-green);
+}
+
+.toast-error {
+  border-left-color: var(--error-red);
+}
+
+.toast-warning {
+  border-left-color: var(--warning-yellow);
+}
+
+.toast-info {
+  border-left-color: var(--info-blue);
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.toast-success .toast-icon {
+  background-color: rgba(37, 211, 102, 0.1);
+  color: var(--success-green);
+}
+
+.toast-error .toast-icon {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--error-red);
+}
+
+.toast-warning .toast-icon {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: var(--warning-yellow);
+}
+
+.toast-info .toast-icon {
+  background-color: rgba(23, 162, 184, 0.1);
+  color: var(--info-blue);
+}
+
+.toast-message {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: all 150ms ease-in-out;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-close:hover {
+  background-color: var(--light-grey);
+  color: var(--text-primary);
+}
+
+.toast-close:focus-visible {
+  outline: 2px solid var(--accent-orange);
+  outline-offset: 2px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.toast-exit {
+  animation: slideOut 0.3s ease-in forwards;
+}
+
+@media (max-width: 768px) {
+  .toast {
+    min-width: auto;
+    max-width: 100%;
+  }
+}
+

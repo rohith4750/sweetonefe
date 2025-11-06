@@ -1,0 +1,19 @@
+.returns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.returns-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.returns-list-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+

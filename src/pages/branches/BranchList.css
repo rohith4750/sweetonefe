@@ -1,0 +1,25 @@
+.branch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.branch-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branch-list-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.branch-list-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+

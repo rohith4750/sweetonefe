@@ -1,0 +1,29 @@
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.search-bar-input {
+  width: 100%;
+}
+
+.search-bar-input input {
+  padding-left: 2.5rem !important;
+}
+

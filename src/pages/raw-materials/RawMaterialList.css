@@ -1,0 +1,25 @@
+.raw-material-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.raw-material-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.raw-material-list-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.raw-material-list-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+

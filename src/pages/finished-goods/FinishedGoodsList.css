@@ -1,0 +1,19 @@
+.finished-goods-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.finished-goods-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finished-goods-list-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+

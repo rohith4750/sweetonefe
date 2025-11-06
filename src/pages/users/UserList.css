@@ -1,0 +1,30 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-list-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.user-list-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
